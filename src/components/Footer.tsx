@@ -8,11 +8,24 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">RS</span>
+            <div className="flex items-center space-x-3">
+              {/* Stylized Blue R Logo */}
+              <div className="relative w-10 h-10">
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg transform rotate-12 shadow-lg"></div>
+                <div className="absolute inset-1 bg-white rounded-md transform rotate-12 flex items-center justify-center shadow-inner">
+                  <span className="text-blue-600 font-bold text-lg transform -rotate-12">R</span>
+                </div>
               </div>
-              <span className="text-xl font-bold">RemoteSeat</span>
+              
+              {/* Enhanced Logo Text */}
+              <div className="flex items-center">
+                <span className="text-2xl font-extrabold text-white tracking-tight drop-shadow-sm">
+                  REMOTE
+                </span>
+                <span className="text-2xl font-extrabold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent tracking-tight drop-shadow-sm ml-1">
+                  SEAT
+                </span>
+              </div>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
               On-Demand Talent & Intelligent Services for Tomorrow's Business. 
