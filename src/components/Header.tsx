@@ -103,14 +103,9 @@ const Header: React.FC = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <Link to="/" className="flex items-center space-x-3">
-            {/* Stylized Blue R Logo */}
-            <div className="relative w-10 h-10">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg transform rotate-12 shadow-lg"></div>
-              <div className="absolute inset-1 bg-white rounded-md transform rotate-12 flex items-center justify-center shadow-inner">
-                <span className="text-blue-600 font-bold text-lg transform -rotate-12">R</span>
-              </div>
-            </div>
+          <Link to="/" className="flex items-center space-x-1">
+            {/* Rlogo.png Image */}
+            <img src="/Rlogo.png" alt="RemoteSeat Logo" className="h-8 w-auto ml-2" />
             
             {/* Enhanced Logo Text */}
             <div className="flex items-center">
